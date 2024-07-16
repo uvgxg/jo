@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Nunito", sans-serif;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+ 
+}
+.co{
+    background-color: rgba(240, 248, 255, 0.609);
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+}
+.pfp{
+    margin: 12px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.inline-elements {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px; /* مسافة بين العناصر الأفقية والمحتوى السفلي */
+}
+
+.inline-elements img.pfp {
+    margin-right: 10px; /* مسافة بين الصورة والنص */
+}
+
+.inline-elements p {
+    margin: 0;
+    font-weight: 900;
+}
+
+.additional-content {
+    /* هنا يمكنك إضافة أي تنسيقات إضافية للمحتوى الآخر */
+    text-align: left; /* إذا كنت تريد تغيير توسيط النص */
+    margin: 12px;
+    font-weight: 900;
+}
+
+
+.language-buttons {
+    margin-bottom: 20px;
+
+}
+
+.language-buttons button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 130px;
+ height: 40px;
+ font-size: 1.1em;
+ cursor: pointer;
+ background-color: #171717;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ transition: all .4s;
+
+}
+.language-buttons button:hover{
+    border-radius: 5px;
+ transform: translateY(-10px);
+ box-shadow: 0 7px 0 -2px #f85959,
+  0 15px 0 -4px #39a2db,
+  0 16px 10px -3px #39a2db;
+}
+.language-buttons button:active {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+     0 8px 0 -4px #39a2db,
+     0 12px 10px -3px #39a2db;
+   }
+
+
+   /* تعريف الخطوط */
+@font-face {
+    font-family: 'ArabicFont';
+    src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap') format('woff2'),
+         url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap') format('woff');
+}
+
+@font-face {
+    font-family: 'EnglishFont';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap') format('woff2'),
+         url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap') format('woff');
+}
+
+@font-face {
+    font-family: 'FrenchFont';
+    src: url('path/to/french-font.woff2') format('woff2'),
+         url('path/to/french-font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GermanFont';
+    src: url('path/to/german-font.woff2') format('woff2'),
+         url('path/to/german-font.woff') format('woff');
+}
+
+/* تطبيق الخطوط */
+.arabic-text {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+
+}
+
+.english-text {
+    font-family: "Nunito", sans-serif;
+}
+
+.french-text {
+    font-family: 'FrenchFont', sans-serif;
+}
+
+.german-text {
+    font-family: 'GermanFont', sans-serif;
+}
+.redes {
+    width: 80px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .redes a svg {
+    width: 30px;
+    fill: #ffffff;
+  }
+  
+  .redes .discord {
+    background-color: rgb(0, 60, 255);
+    border-radius: 0 0 10px 0;
+  }
+  
+  .redes .instagram {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #f56040);
+    border-radius: 0 10px 0 0;
+  }
+  
+  .redes .github {
+    background-color: rgb(24, 22, 22);
+  }
+  
+  .redes .twitter {
+    background-color: #000000;
+  }
+  
+  .redes .facebook {
+    background-color: #006aff;
+  }
+  
+  .redes a:hover {
+    width: 130%;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  
+  
+  
+  
